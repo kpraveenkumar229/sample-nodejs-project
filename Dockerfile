@@ -1,6 +1,6 @@
 FROM node:latest
 
-MAINTAINER Abhishek Modi 
+MAINTAINER Praveen Kumar
 
 RUN echo "Tryin to build my first application"
 
