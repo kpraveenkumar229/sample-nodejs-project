@@ -6,5 +6,11 @@ pipeline{
                  git 'https://github.com/kpraveenkumar229/sample-nodejs-project.git'
             }
         }
+        stage('Build-Stage'){
+            steps{
+                sh 'npm build'
+            }
+        }
     }
 }
+
