@@ -26,7 +26,7 @@ pipeline{
                 sh 'docker login -u kpraveenkumar23232 -p 123456789'
             }
         }
-        stage('Pushing Docker image to DockerHub'{
+        stage('Pushing Docker image to DockerHub'){
             steps{
                 sh 'docker push kpraveenkumar23232/newimage:7'
             }
