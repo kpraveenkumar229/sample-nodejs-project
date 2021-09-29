@@ -10,7 +10,6 @@ pipeline{
             steps{
                 sh 'npm build'
             }
-            
         stage('Change Directoery'){
             steps{
                 sh 'cd /var/lib/jenkins/workspace/nodeeeee'
@@ -23,7 +22,7 @@ pipeline{
             steps{
                 sh 'docker login -u kpraveenkumar23232 -p 123456789'
             }
-        stages('Pushing Docker image to DockerHub')
+        stage('Pushing Docker image to DockerHub')
             steps{
                 sh 'docker push kpraveenkumar23232/newimage:7'
             }
@@ -33,4 +32,3 @@ pipeline{
         }
     }
 }
-
